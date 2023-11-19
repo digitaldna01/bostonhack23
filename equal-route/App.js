@@ -10,42 +10,55 @@ let map, infoWindow;
 
 export default function App() {
 
+  //Questrom
+  const [origin, setOrigin] = useState({
+    latitude: 42.34864109052953,
+    longitude: -71.10022738965007
+  });
+
   // Tsai Performance center 
   const [destination, setDestination] = useState({
     latitude: 42.35025781988775,
     longitude: -71.1045319053142
   });
 
-  //Questrom
-  const [origin, setOrigin] = useState({
-    latitude: 42.34976076615497,
-    longitude: -71.09956806081382
+  const [destination2, setDestination2] = useState({
+    latitude: 42.35015781988775,
+    longitude: -71.1045319053142
+  });
+
+  const [waypoints, setWaypoints] = useState({
+    latitude: 42.350201,
+    longitude: 71.103573
   });
 
   return (
     <View style={styles.container}>
-      {/* <Text>This is a test!</Text> */}
+      <Text>This is a test!</Text>
       <MapView
         style={{ height: '110%', width: '100%' }}
         provider={PROVIDER_GOOGLE}
-        showsUserLocation={true}
+        //showsUserLocation={true}
         initialRegion={{
-          latitude: pos.lat,
-          //currentLocation.latitude,
-          // position.coords.latitude,
-          longitude: pos.lng,
-          //currentLocation.longitude,
-          // position.coords.longitude,
-          //latitudeDelta: .1,
-          //longitudeDelta: .1,
+          latitude: 42.34864109052953,
+          longitude: -71.10022738965007
         }}
       >
         <MapViewDirections
           origin={origin}
           destination={destination}
+          waypoint={waypoints}
           apikey="AIzaSyDXdNULA8JJynfh30jdKn0uPRvvVyIPe1U"
           strokeWidth={4}
-          strokeColor="red"
+          strokeColor='#3981B0'
+          mode={'WALKING'}
+        />
+        <MapViewDirections
+          origin={origin}
+          destination={destination2}
+          apikey="AIzaSyDXdNULA8JJynfh30jdKn0uPRvvVyIPe1U"
+          strokeWidth={4}
+          strokeColor='#FF6240'
           mode={'WALKING'}
         />
         <Marker
@@ -71,14 +84,14 @@ const styles = StyleSheet.create({
   },
 });
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(
-    browserHasGeolocation
-      ? "Error: The Geolocation service failed."
-      : "Error: Your App doesn't support geolocation.",
-  );
-  infoWindow.open(map);
-}
+// function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+//   infoWindow.setPosition(pos);
+//   infoWindow.setContent(
+//     browserHasGeolocation
+//       ? "Error: The Geolocation service failed."
+//       : "Error: Your App doesn't support geolocation.",
+//   );
+//   infoWindow.open(map);
+// }
 
 
