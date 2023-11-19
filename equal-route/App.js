@@ -9,35 +9,17 @@ let map, infoWindow;
 
 
 export default function App() {
-  //const pos = { lat: 0, lng: 0 };
 
-  //Current Location
-  if (navigator.geolocation) {
-    console.log("working here");
-    navigator.geolocation.getCurrentPosition(successCallback)((position) => {
-      const pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-      };
-    });
-  } else {
-    // Browser doesn't support Geolocation
-    console.log("going to else");
-    pos = {
-      lat: 42.35062656407261,
-      lng: -71.10539373555561,
-    }
-  }
-
-  // Data Science Building
+  // Tsai Performance center 
   const [destination, setDestination] = useState({
-    latitude: 42.35009532692169,
-    longitude: -71.10325692205237
+    latitude: 42.35025781988775,
+    longitude: -71.1045319053142
   });
 
+  //Questrom
   const [origin, setOrigin] = useState({
-    latitude: pos.lat,
-    longitude: pos.lng
+    latitude: 42.34976076615497,
+    longitude: -71.09956806081382
   });
 
   return (
