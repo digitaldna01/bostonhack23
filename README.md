@@ -1,2 +1,2 @@
 # bostonhack23
-Service program to help disability people access their location using Google Map API
+Navigation Service programmed to help people with disabilities safely arrive at their destination using Google Map API.
