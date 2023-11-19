@@ -15,7 +15,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bhacks.equalroute",
+      "config": {
+        "googleMapsApiKey": "AIzaSyDXdNULA8JJynfh30jdKn0uPRvvVyIPe1U"
+      }
     },
     "android": {
       "adaptiveIcon": {
