@@ -24,13 +24,20 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      {/* <Text>This is a test!</Text> */}
       <MapView
         style={{ height: '110%', width: '100%' }}
         provider={PROVIDER_GOOGLE}
         showsUserLocation={true}
         initialRegion={{
           latitude: pos.lat,
+          //currentLocation.latitude,
+          // position.coords.latitude,
           longitude: pos.lng,
+          //currentLocation.longitude,
+          // position.coords.longitude,
+          //latitudeDelta: .1,
+          //longitudeDelta: .1,
         }}
       >
         <MapViewDirections
