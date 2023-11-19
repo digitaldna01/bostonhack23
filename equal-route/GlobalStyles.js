@@ -1,0 +1,81 @@
+/* fonts */
+export const FontFamily = {
+  body1Regular: "Poppins-Regular",
+  body1Medium: "Poppins-Medium",
+  sFProDisplay: "SF Pro Display",
+  sourceSansPro: "Source Sans Pro",
+  segoeUI: "Segoe UI",
+  robotoThinItalic: "Roboto-ThinItalic",
+  heading2Semibold: "Poppins-SemiBold",
+  robotoRegular: "Roboto-Regular",
+  headlineMain: "DMSans-Bold",
+  bodyMain: "DMSans-Medium",
+  dMSansRegular: "DMSans-Regular",
+  poppinsBold: "Poppins-Bold",
+};
+/* font sizes */
+export const FontSize = {
+  body1Regular_size: 16,
+  heading2Regular_size: 24,
+  size_sm: 14,
+  size_mid: 17,
+  size_xs: 12,
+  size_13xl: 32,
+  size_3xs: 10,
+  size_xl: 20,
+  size_mini: 15,
+  size_10xl: 29,
+  bodyMain_size: 13,
+  size_lg: 18,
+};
+/* Colors */
+export const Color = {
+  colorSteelblue: "#0484b8",
+  colorBlack: "#000",
+  colorWhitesmoke_100: "#f7f7f6",
+  giratina100: "#f5f5f5",
+  colorWhitesmoke_200: "#e8eae8",
+  colorWhitesmoke_300: "#e9e9e9",
+  giratina500: "#9e9e9e",
+  charizard400: "#fee440",
+  colorGray_100: "#2c2c2c",
+  blackWhiteBlack: "#212121",
+  primaryBlack: "#181d27",
+  colorGray_200: "#191919",
+  colorGray_300: "rgba(0, 0, 0, 0.35)",
+  colorGainsboro_100: "#e0e0e0",
+  colorGainsboro_200: "rgba(217, 217, 217, 0.26)",
+  colorSilver_100: "#c7c7cb",
+  colorSilver_200: "#bebfc0",
+  colorSilver_300: "#b7b7b5",
+  gray80: "#6c6c6c",
+  colorWhite: "#fff",
+  grayLight: "#d7d7d7",
+  colorAliceblue: "#e1f6ff",
+  lightThemeTextColorsPrimary: "#323130",
+};
+/* Paddings */
+export const Padding = {
+  p_base: 16,
+  p_xl: 20,
+  p_3xs: 10,
+  p_7xs: 6,
+  p_5xs: 8,
+  p_9xs: 4,
+  p_5xl: 24,
+  p_4xl: 23,
+  p_8xs: 5,
+};
+/* border radiuses */
+export const Border = {
+  br_81xl: 100,
+  br_5xs: 8,
+  br_3xs: 10,
+  br_9xs: 4,
+  br_lg: 18,
+  br_5xl: 24,
+  br_10xs_7: 3,
+  br_11xs_3: 1,
+  br_7xs: 6,
+  br_mini: 15,
+};
